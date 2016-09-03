@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="ExpandPanelSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ExpandPanelSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:jhp="using:JHControl.Panel"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="White">
+        <jhp:ExpandPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Top"
+                        IsExpanded="False"
+                        Margin="25">
+            <jhp:ExpandPanel.HeaderContent>
+                <Grid Height="50"
+                      Width="200"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      Background="Red" />
+            </jhp:ExpandPanel.HeaderContent>
+            <jhp:ExpandPanel.SelectedHeaderContent>
+                <Grid Height="50"
+                      Width="200"
+                      HorizontalAlignment="Stretch"
+                      VerticalAlignment="Stretch"
+                      Background="Blue" />
+            </jhp:ExpandPanel.SelectedHeaderContent>
+            <jhp:ExpandPanel.Content>
+                <Grid Height="300"
+                      Width="200"
+                      Background="Green" />
+            </jhp:ExpandPanel.Content>
+        </jhp:ExpandPanel>
+    </Grid>
+</Page>
